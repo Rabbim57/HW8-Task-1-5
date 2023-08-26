@@ -34,9 +34,11 @@ public class Main {
         numberFour[0] = 1;
         numberFour[1] = 7;
         numberFour[2] = 9;
-        for (int d = 0; d < numberFour.length; d++) {
+        for (int d = 0; d < numberFour.length -1; d++) {
             System.out.print(numberFour[d] + ",");
         }
+        System.out.println(numberFour [numberFour.length - 1]);
+
 
 
 
@@ -49,9 +51,13 @@ public class Main {
         numberSix[1] = 7;
         numberSix[2] = 9;
         for (int i = numberSix.length -1;  i >=0; i--) {
-            System.out.print(numberSix[i] +  ",");
-
+            if (i == numberSix.length + 1) {
+                System.out.print(numberSix[i]);
+            } else {
+                System.out.print(numberSix[i] + " , ");
+            }
         }
+
 
 
         System.out.println();
