@@ -58,8 +58,6 @@ public class Main {
             }
         }
 
-
-
         System.out.println();
         System.out.println("Task 4");
         // Task 4
