@@ -28,30 +28,15 @@ public class Main {
             System.out.println(numberThree[d]);
         }
 
-        System.out.println();
-        System.out.println("Task 2");
-        // Task 2
-
-        int[] numberFour = {1, 2, 3};
-        numberFour[0] = 1;
-        numberFour[1] = 7;
-        numberFour[2] = 9;
-        for (int d = 0; d < numberFour.length -1; d++) {
-            System.out.print(numberFour[d] + ",");
-        }
-        System.out.println(numberFour [numberFour.length - 1]);
-
-
-
 
         System.out.println();
-        System.out.println("Task 3");
-        // Task 3
+        System.out.println("Task 2-3");
+        // Task 2-3
 
-        int[] arry = new int[] {1, 7, 9};
+        int[] arry = new int[]{1, 7, 9};
         System.out.println(Arrays.toString(arry));
 
-        for (int i = 0; i < arry.length/2; i++) {
+        for (int i = 0; i < arry.length / 2; i++) {
             int tmp = arry[i];
             arry[i] = arry[arry.length - 1 - i];
             arry[arry.length - 1 - i] = tmp;
@@ -63,20 +48,16 @@ public class Main {
         System.out.println("Task 4");
         // Task 4
 
-        int [] numberFive = {1, 2, 3};
+        int[] numberFive = {1, 2, 3};
         numberFive[0] = 1;
         numberFive[1] = 7;
         numberFive[2] = 9;
-        for (int i = 0; i < numberFive.length; i ++)
-                System.out.println( numberFive [i] + 1);
-
-
-
+        for (int i = 0; i < numberFive.length; i++) {
+            if (numberFive[i] % 2 != 0) {
+                numberFive[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(numberFive));
     }
-
-
-
-
-
 
 }
