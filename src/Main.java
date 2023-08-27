@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Task 1
@@ -46,17 +48,16 @@ public class Main {
         System.out.println("Task 3");
         // Task 3
 
-        int[] numberSix = {1, 2, 3};
-        numberSix[0] = 1;
-        numberSix[1] = 7;
-        numberSix[2] = 9;
-        for (int i = numberSix.length -1;  i >=0; i--) {
-            if (i == numberSix.length + 1) {
-                System.out.print(numberSix[i]);
-            } else {
-                System.out.print(numberSix[i] + " , ");
-            }
+        int[] arry = new int[] {1, 7, 9};
+        System.out.println(Arrays.toString(arry));
+
+        for (int i = 0; i < arry.length/2; i++) {
+            int tmp = arry[i];
+            arry[i] = arry[arry.length - 1 - i];
+            arry[arry.length - 1 - i] = tmp;
         }
+
+        System.out.println(Arrays.toString(arry));
 
         System.out.println();
         System.out.println("Task 4");
